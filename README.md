@@ -9,3 +9,7 @@ This repository contains the projects and assignments developed as part of the P
 - Comparing and contrasting approaches to problem-solving across paradigms
 
 In this repository, you will find code examples, exercises, and documentation that illustrate the concepts learned throughout the course. The aim is to deepen understanding of programming paradigms and enhance the ability to choose the appropriate paradigm for various programming tasks.
+
+## Technologies ##
+
+Ocaml, Scala, Clojure
