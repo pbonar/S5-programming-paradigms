@@ -1,0 +1,18 @@
+(defn str-length [s]
+  (if (empty? s)
+    0
+    (+ 1 (str-length (subs s 1)))))
+
+(defn polacz [lst]
+  (if (empty? lst)
+    []
+    (cons (str-length (first lst)) (polacz (rest lst)))))
+
+(polacz ["To" "jest" "napis"])
+;; wynik: (2 4 5)
+
+(polacz [])
+;; wynik: ()
+
+(polacz ["Cześć"])
+;; wynik: (5)
