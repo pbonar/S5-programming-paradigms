@@ -15,7 +15,8 @@ object List3 {
     }
 
     def wypiszListe[A](xs: List[A]) = {
-      xs.foreach(println)
+      xs.foreach(print)
+        println();
     }
 
     // Zadanie 2
@@ -55,4 +56,32 @@ object List3 {
         znajdzUnique(xsUn, Nil)
     }
 
+    def main(args: Array[String]): Unit = {
+        // Test dla obetnijKrance
+        val list1 = List(1, 2, 3, 4, 5)
+        println("Lista dla obetnijKrance:")
+        wypiszListe(list1)
+        val obcieta = obetnijKrance(list1)
+        println("Lista po obecieciu krancow:")
+        wypiszListe(obcieta)
+        println()
+
+        // Test dla grupuj
+        val list2 = List("1", "1", "1", "2", "3", "3", "4", "4", "4", "4")
+        println("Lista dla grupuj:")
+        wypiszListe(list2)
+        val grupowana = grupuj(list2)
+        println("Lista po grupuj:")
+        wypiszListe(grupowana)
+        println()
+
+        // Test dla unique
+        val list3 = List("1", "1", "a", "1", "1", "2", "3", "3", "1", "1", "4", "4")
+        println("Lista dla unique:")
+        wypiszListe(list3)
+        val uniqueElems = unique(list3)
+        println("Unique elements:")
+        wypiszListe(uniqueElems)
+        println()
+    }
 }
