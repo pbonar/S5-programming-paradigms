@@ -15,8 +15,8 @@ object List3 {
     }
 
     def wypiszListe[A](xs: List[A]) = {
-      xs.foreach(" ")
-
+      xs.foreach(print)
+        println();
     }
 
     // Zadanie 2

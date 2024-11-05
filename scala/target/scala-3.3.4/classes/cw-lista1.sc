@@ -34,8 +34,7 @@ object List1 {
 
   // ZADANIE 5
   def palindrome[A](xs: List[A]): Boolean = {
-    if (xs == null) false
-    else xs == xs.reverse
+    xs == xs.reverse
   }
 
   // ZADANIE 6
