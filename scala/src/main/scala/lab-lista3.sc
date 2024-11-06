@@ -42,7 +42,7 @@ object List3 {
 
     // Zadanie 3
     def unique[A](xs: List[A]): List[A] = {
-        val xsUn = grupuj(xs)
+        val result = grupuj(xs)
 
         @annotation.tailrec
         def znajdzUnique(xs: List[(A, Int)], acc: List[A]): List[A] = {
@@ -53,7 +53,7 @@ object List3 {
             }
         }
 
-        znajdzUnique(xsUn, Nil)
+        znajdzUnique(result, Nil)
     }
 
     def main(args: Array[String]): Unit = {

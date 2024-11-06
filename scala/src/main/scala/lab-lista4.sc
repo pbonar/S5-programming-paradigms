@@ -26,16 +26,18 @@ object List4 {
   }
 
   def main(args: Array[String]): Unit = {
-    val list = List(1,2,3,4,5,6,7,8,9)
-    println(s"Lista poczatkowa: ($list)")
+    val list1 = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+    println("Zadanie 1")
+    println(s"Lista poczatkowa 1: ($list1)")
 
+    // ZADANIE 1
     // Test dla wersji nieogonowej
-    val (even1, odd1) = podzielNieogonowa(list)
-    println(s"Wynik z rekursją nieogonową: ($even1, $odd1)")
+    val (even1, odd1) = podzielNieogonowa(list1)
+    println(s"Wynik nieogonowy: ($even1, $odd1)")
 
     // Test dla wersji ogonowej
-    val (even2, odd2) = podzielOgonowa(list)
-    println(s"Wynik z rekursją ogonową: ($even2, $odd2)")
+    val (even2, odd2) = podzielOgonowa(list1)
+    println(s"Wynik ogonowy: ($even2, $odd2)")
   }
 }
 
